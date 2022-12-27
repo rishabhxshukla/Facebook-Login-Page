@@ -1,0 +1,122 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Helvetica';
+    background-color: #F0F2F5;
+}
+/*----------------------------------*/
+
+/* CONTAINER */
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 100px;
+    height: 100vh;
+}
+/*----------------------------------*/
+
+/* LEFT PANEL */
+.info h1 {
+    color: #1877F2;
+    font-size: 60px;
+}
+.info p {
+    font-size: 26px;
+    margin-top: 20px;
+}
+/*----------------------------------*/
+
+/* RIGHT PANEL */
+.form {
+    /* border: 2px solid red; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+
+    height: 350px;
+    width: 396px;
+    padding: 10px 24px;
+    border-radius: 8px;
+    background-color: #FFFFFF;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 2px 4px 0px, rgba(0, 0, 0, 0.1) 0px 8px 16px 0px;
+}
+
+/* INPUT FIELDS */
+input {
+    height: 52px;
+    width: 364px;
+    border: 1px solid #DDDFE2;
+    padding: 14px 16px;
+    border-radius: 6px;
+    font-size: 17px;
+}
+
+/* FORGOT PASSWORD */
+a {
+    text-decoration: none;
+    font-size: 14px;
+    color: #1877F2;
+    margin-top: 10px;
+}
+
+/* HORIZONTAL LINE */
+#line {
+    width: 364px;
+    margin: 12px;
+    border-bottom: 1px solid #DADDE1;
+}
+
+/* BUTTONS */
+#login {
+    height: 52px;
+    width: 364px;
+    padding: 14px 16px;
+    border-radius: 6px;
+    font-size: 20px;
+    font-weight: 700;
+    border: none;
+    color: #FFFFFF;
+    background-color: #1877F2;
+}
+#createNew {
+    height: 48px;
+    width: 195px;
+    border-radius: 6px;
+    font-size: 17px;
+    font-weight: 700;
+    border: none;
+    color: #FFFFFF;
+    background-color: #42B72A;
+}
+/*----------------------------------*/
+
+/* MOBILE SCREENS */
+@media screen and (max-width: 700px) 
+{
+    .container {
+        flex-wrap: wrap;
+        gap: 20px;
+        height: 50vh;
+        margin-top: 20px;
+    }
+    .info h1 {
+        font-size: 22px;
+        text-align: center;
+    }
+    .info p {
+        display: none;
+    }
+    input {
+        font-size: 14px;
+    }
+    #login, #createNew {
+        font-size: 16px;
+    }
+}
+/*----------------------------------*/
